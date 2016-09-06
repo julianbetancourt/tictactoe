@@ -11,12 +11,14 @@ class Board extends Component {
   handleFieldClick(e) {
     const row = e.target.id.slice(0,1);
     const col = e.target.id.slice(2);
-    this.props.markField(row, col);
+    if (this.props.board[row][col] === null) {
+      this.props.markField(row, col);
 
-    let AIID = setTimeout(() => {
-      this.props.AIMove();
-      clearTimeout(AIID);
-    }, 300);
+      let AIID = setTimeout(() => {
+        this.props.AIMove();
+        clearTimeout(AIID);
+      }, 300);
+    }
   }
   render() {
     const { board } = this.props;
