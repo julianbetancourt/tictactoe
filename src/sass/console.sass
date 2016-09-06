@@ -1,0 +1,25 @@
+.console
+  background: lighten($background, 10%)
+  width: 94%
+  margin: 1em auto 0
+  span
+    display: block
+    text-align: center
+    color: white
+    font-size: 1.1em
+    padding: .5em 0
+    &:nth-child(1)
+      border-bottom: 4px solid $background
+
+.restart
+  color: white
+  background: $background
+  border: none
+  padding: .5em
+  &:hover
+    background: white
+    color: $background
+
+@media (min-width: 530px)
+  .console
+    max-width: 504px

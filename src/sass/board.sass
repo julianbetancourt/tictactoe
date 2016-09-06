@@ -1,0 +1,31 @@
+.board
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  height: auto
+  max-height: auto
+  //padding: 6em 0
+  width: 100%
+
+.field
+  width: 30%
+  background: lighten($background, 10%)
+  margin: .4rem .2rem 0
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  color: #fff
+  font-size: 2em
+  &:hover
+    background: lighten($background, 50%)
+  &::after
+    content: ''
+    display: block
+    padding-bottom: 100%
+
+
+@media (min-width: 460px)
+  .board
+    max-width: 437px
