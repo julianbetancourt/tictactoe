@@ -1,6 +1,6 @@
 /*
   This is a Minimax Algorithm Implementation
-  wrote by Vivek Panyam,
+  written by Vivek Panyam,
   original source and explanation can be found at
   https://blog.vivekpanyam.com/how-to-build-an-ai-that-wins-the-basics-of-minimax-search/
 */
